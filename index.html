@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리 반 학급 홈페이지</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>📚 우리 반 학급 홈페이지</h1>
+    <p>학생 활동 게시판</p>
+  </header>
+
+  <main>
+
+    <section class="write-box">
+      <h2>글쓰기</h2>
+
+      <input type="text" id="studentName" placeholder="이름 입력">
+
+      <textarea id="postContent" placeholder="내용 입력"></textarea>
+
+      <input type="file" id="imageInput" accept="image/*">
+
+      <button onclick="addPost()">등록하기</button>
+    </section>
+
+    <section class="post-list">
+      <h2>게시글</h2>
+
+      <div id="posts"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
